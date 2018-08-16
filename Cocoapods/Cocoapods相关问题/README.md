@@ -6,7 +6,7 @@
 * [如何从电脑中卸载cocoapods](http://blog.csdn.net/qq_18670721/article/details/50432892)
 
 ##### 图释
- ![image](https://github.com/itwyhuaing/Tool/blob/master/Cocoapods相关问题/images/uninstall_cocoapods.png)
+ ![image](https://github.com/itwyhuaing/Tool/blob/master/Cocoapods/Cocoapods相关问题/images/uninstall_cocoapods.png)
 
 ## 安装
 
@@ -15,15 +15,12 @@
 * [报错处理](http://stackoverflow.com/questions/30812777/cannot-install-cocoa-pods-after-uninstalling-results-in-error/30851030#30851030)
 
 ##### 图释
-* ![image](https://github.com/itwyhuaing/Tool/blob/master/Cocoapods相关问题/images/install_cocoapods.png)
+* ![image](https://github.com/itwyhuaing/Tool/blob/master/Cocoapods/Cocoapods相关问题/images/install_cocoapods.png)
 
 ## 升级
 
-##### 参考
-* []()
-
 ##### 部分图释
-* ![image](https://github.com/itwyhuaing/Tool/blob/master/Cocoapods相关问题/images/update_cocopoads.png)
+* ![image](https://github.com/itwyhuaing/Tool/blob/master/Cocoapods/Cocoapods相关问题/images/update_cocopoads.png)
 
 ## 使用报错处理
 * [CocoaPods: pod search 搜索类库失败的解决办法](http://blog.cocoachina.com/article/29127)
