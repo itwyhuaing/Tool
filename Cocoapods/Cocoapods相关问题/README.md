@@ -28,6 +28,8 @@
 * [升级电脑系统之后，cocoapods不能正常使用解决办法](http://blog.csdn.net/wddyzzw/article/details/78435569)
 
 * 错误报错代码摘录 :Xcode 升级之后新建项目无法使用 CocoaPods ,报如下错误代码；解决方法为升级 Cocopoads.
+
+
 ```
 ### Report
 
@@ -54,8 +56,45 @@ Repositories : master - https://github.com/CocoaPods/Specs.git @ 547e828b7036ce1
 
 Search for existing github issues similar to yours:
 
+```
+
+
+## 关于 Podfile 文件
+
+* [你真的会写Podfile吗?](https://www.jianshu.com/p/8a0fd6150159)
 
 ```
+# 可选，用于说明依赖库的来源地址
+#source 'https://github.com/CocoaPods/Specs.git'
+#source 'https://github.com/Artsy/Specs.git'
+
+# 可选，说明平台是ios，最低版本是8.0
+platform :ios, '8.0'
+
+# 可选，通过指定use_frameworks!要求生成的是framework而不是静态库。
+#use_frameworks!
+
+# 可选，忽略引入库的所有警告
+#inhibit_all_warnings!
+
+# 可选，target 与 end 配对使用，意针对 "APPName（实际开发中替换成当前工程中与之对应的 target）"需要引入的依赖库
+target 'APPName' do
+
+	pod 'AFNetworking', '~> 3.1.0'
+
+  # 有外层的情况下才可以嵌套，该项可选
+  target 'APPNameTests' do
+       inherit! :search_paths
+       pod 'XXLib'
+  end
+
+end
+
+```
+
+
+
+
 ## 常用终端命令 <持续更新 ... >
 * ruby -v                                                       查看本地ruby版本
 * gem sources -l                                                查看当前ruby的源
