@@ -133,3 +133,10 @@ pod trunk add-owner RWBanner xx@163.com
 4. 验证说明文件报错 - 解决方式：建议使用版本控制管理工具 Git/SVN (这里使用Git)
 
 ![image](https://github.com/itwyhuaing/Tool/blob/master/Cocoapods/如何制作Cocoapod依赖库/image/error_tag.png)
+
+##### 参考
+
+
+* [手把手教你发布自己的cocoapods开源库](https://www.jianshu.com/p/3a365f273439)
+
+* [Cocoapods私有库管理实现](http://www.cocoachina.com/ios/20170706/19695.html)
