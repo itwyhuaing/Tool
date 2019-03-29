@@ -31,6 +31,14 @@ pod spec create RWBanner
 ![image](https://github.com/itwyhuaing/Tool/blob/master/Cocoapods/如何制作Cocoapod依赖库/image/3.png)
 
 
+>  .podspec 文件配置项说明
+
+```
+
+
+```
+
+
 ##### 打上标签并将所有修改推送到远程仓库
 
 > 所有代码和描述文件修改之后打上标签并推送至远程仓库，添加、查看、推送、删除标签的终端命令如下:
@@ -133,6 +141,26 @@ pod trunk add-owner RWBanner xx@163.com
 4. 验证说明文件报错 - 解决方式：建议使用版本控制管理工具 Git/SVN (这里使用Git)
 
 ![image](https://github.com/itwyhuaing/Tool/blob/master/Cocoapods/如何制作Cocoapod依赖库/image/error_tag.png)
+
+5. 制作的当前依赖库需要依赖其他已存在依赖库 - 验证 .podspec 文件时会报以下错
+
+>> 报错关键词提取
+
+```
+error: include of non-modular header inside framework module
+
+-Werror,-Wnon-modular-include-in-framework-module
+
+```
+
+![image](https://github.com/itwyhuaing/Tool/blob/master/Cocoapods/如何制作Cocoapod依赖库/image/error_lint_1.png)
+
+关于这个这个错误在网上看了些材料，类似的问题遇到的蛮多，但解决方式似乎都不太一样；贴出两个表靠谱的解决方式地址链接，便于查看。
+
+* [私有库依赖私有库](https://www.jianshu.com/p/4d73369b8cf9)
+* [--use-libraries](https://blog.csdn.net/weixin_33695082/article/details/86982044)
+
+> 制作 JXFMDBMOperator 依赖库遇到该问题时，采用的解决方式时添加 --use-libraries 。
 
 ##### 参考
 
